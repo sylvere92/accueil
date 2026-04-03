@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SB the Grace Entreprise</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .carousel-item img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+  <header>
+   <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="accueil.html">SB the Grace Entreprise</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="accueil.html">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+                <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Hero -->
+<section class="hero" id="Accueil">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <img src="images/pexels-optical-chemist.jpg" class="d-block w-100" alt="Transport de personnes">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h1 class="display-4 fw-bold">Bienvenue Chez SB the Grace Entreprise</h1>
+                    <h2 class="display-5">Voyagez en toute sécurité</h2>
+                    <p class="lead">Brazzaville ↔ Pointe-Noire</p>
+                    <a href="#reservation" class="btn btn-primary btn-lg">Réserver maintenant</a>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="images/marchandise.jfif" class="d-block w-100" alt="Transport de marchandises">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h1 class="display-4 fw-bold">Transport fiable de marchandises</h1>
+                    <p class="lead">Livraison rapide et sécurisée de vos biens</p>
+                    <a href="#reservation" class="btn btn-primary btn-lg">Réserver maintenant</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="images/solution.jfif" class="d-block w-100" alt="Logistique moderne">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                    <h1 class="display-4 fw-bold">Solutions logistiques modernes</h1>
+                    <p class="lead">Gestion efficace du transport des personnes et des biens</p>
+                    <a href="#reservation" class="btn btn-primary btn-lg">Réserver maintenant</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    </div>
+</section>
+<!-- Services -->
+<section class="py-5" id="services">
+    <div class="container text-center">
+        <h2 class="mb-4 fw-bold">Nous Proposons un Services de qualité</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="images/vip download.jfif" class="d-block w-100 rounded" alt="Transport VIP">
+                    <h5>Transport VIP</h5>
+                    <p>Voyage confortable et premium.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="images/climatisé download.jfif" class="d-block w-100 rounded" alt="Transport climatisé">
+                    <h5>Bus climatisés</h5>
+                    <p>Confort et sécurité garantis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="images/Corporate Transportation Services.jfif" class="d-block w-100 rounded" alt="Transport quotidien">
+                    <h5>Trajets quotidiens</h5>
+                    <p>Disponibles tous les jours.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Styles -->
+<style>
+    /* Transition générale pour toutes les cartes de la section services */
+#services .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* effet doux */
+    cursor: pointer; /* montre que c'est interactif */
+}
+
+/* Effet au survol */
+#services .card:hover {
+    transform: scale(1.05); /* agrandit légèrement la carte */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ombre pour relief */
+}
+    </style>
+<!-- Nos solutions de transport et logistique -->
+<section class="solutions py-5" id="solutions">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Nos solutions de transport et logistique</h2>
+        <div class="row g-4">
+
+            <!-- Carte 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm solution-card">
+                    <img src="images/Why Choosing a Coach to Manchester.jfif" class="card-img-top" alt="Transport Pointe-Noire - Brazzaville">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Transport Pointe-Noire ↔ Brazzaville</h5>
+                        <p class="card-text">Voyagez en toute sécurité entre les deux plus grandes villes du Congo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm solution-card">
+                    <img src="images/transport marchandise.jfif" class="card-img-top" alt="Pointe-Noire - autres localités">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Pointe-Noire ↔ autres localités</h5>
+                        <p class="card-text">Transport sûr et rapide pour vos marchandises vers toutes les autres villes du pays.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm solution-card">
+                    <img src="images/Bus.jfif" class="card-img-top" alt="Transport quotidien">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Transport quotidien</h5>
+                        <p class="card-text">Services réguliers et fiables pour vos déplacements quotidiens.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Styles -->
+<style>
+    .solution-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .solution-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    .solutions img {
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+<!-- Reservation -->
+<section class="bg-light py-5" id="reservation">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Réservation</h2>
+        <form id="bookingForm">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <input type="text" class="form-control" placeholder="Nom complet" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="tel" class="form-control" placeholder="Téléphone" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Départ" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Arrivée" required>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-success">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-primary text-white pt-4 pb-3">
+    <div class="container text-center text-md-start">
+        <div class="row">
+
+            <!-- Nom entreprise -->
+            <div class="col-md-4 mb-3">
+                <h5>SB the Grace Entreprise</h5>
+                <p>Votre partenaire de confiance pour des services de qualité.</p>
+            </div>
+
+            <!-- Liens rapides -->
+            <div class="col-md-4 mb-3">
+                <h5>Liens rapides</h5>
+                <p>
+                    <a href="accueil.html" class="text-white text-decoration-none d-block">Accueil</a>
+                    <a href="services.html" class="text-white text-decoration-none d-block">Services</a>
+                    <a href="tarifs.html" class="text-white text-decoration-none d-block">Tarifs</a>
+                    <a href="a-propos.html" class="text-white text-decoration-none d-block">À propos</a>
+                    <a href="contact.html" class="text-white text-decoration-none d-block">Contact</a>
+                </p>
+            </div>
+
+            <!-- Contact + réseaux sociaux -->
+            <div class="col-md-4 mb-3">
+                <h5>Contact</h5>
+                <p>Email : contact@sbgrace.com</p>
+                <p>Tél : +242 XX XXX XXXX</p>
+
+                <!-- Réseaux sociaux -->
+                <div>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="text-white me-3 fs-4"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-3">
+            © 2026 SB the Grace Entreprise - Tous droits réservés
+        </div>
+    </div>
+</footer>
+!-- Bootstrap JS (TRÈS IMPORTANT pour le carousel) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Réservation envoyée avec succès !");
+});
+</script>
+  </header>  
+</body>
+</html>
